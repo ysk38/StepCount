@@ -13,6 +13,7 @@
 		70E7DEAD1A498C2500ABA0BE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70E7DEAC1A498C2500ABA0BE /* Images.xcassets */; };
 		70E7DEB01A498C2500ABA0BE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70E7DEAE1A498C2500ABA0BE /* LaunchScreen.xib */; };
 		70E7DEBC1A498C2600ABA0BE /* StepCountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E7DEBB1A498C2600ABA0BE /* StepCountTests.swift */; };
+		70E7DEC61A4997A800ABA0BE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70E7DEC51A4997A800ABA0BE /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		70E7DEB51A498C2500ABA0BE /* StepCountTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StepCountTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		70E7DEBA1A498C2500ABA0BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70E7DEBB1A498C2600ABA0BE /* StepCountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCountTests.swift; sourceTree = "<group>"; };
+		70E7DEC51A4997A800ABA0BE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70E7DEC61A4997A800ABA0BE /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +62,7 @@
 		70E7DE971A498C2500ABA0BE = {
 			isa = PBXGroup;
 			children = (
+				70E7DEC51A4997A800ABA0BE /* CoreLocation.framework */,
 				70E7DEA21A498C2500ABA0BE /* StepCount */,
 				70E7DEB81A498C2500ABA0BE /* StepCountTests */,
 				70E7DEA11A498C2500ABA0BE /* Products */,
