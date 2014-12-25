@@ -16,35 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="高さ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SEW-YR-2SM">
-                                <rect key="frame" x="236" y="92" width="128" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="128" id="QMa-eB-6t3"/>
-                                    <constraint firstAttribute="width" constant="128" id="dQA-jg-QaA"/>
-                                    <constraint firstAttribute="height" constant="21" id="m60-Ya-rrP"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="dQA-jg-QaA"/>
-                                        <exclude reference="m60-Ya-rrP"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular" misplaced="YES">
-                                    <rect key="frame" x="236" y="310" width="128" height="21"/>
-                                    <mask key="constraints">
-                                        <include reference="dQA-jg-QaA"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="constraints">
-                                        <exclude reference="QMa-eB-6t3"/>
-                                        <include reference="m60-Ya-rrP"/>
-                                    </mask>
-                                </variation>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lollipop-2-590x330.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="K2c-j4-44x">
                                 <rect key="frame" x="0.0" y="0.0" width="117" height="66"/>
                                 <constraints>
@@ -61,7 +32,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="気圧値" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XzQ-n9-4Au">
                                 <rect key="frame" x="215" y="28" width="171" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="171" id="Ck5-74-2Hx"/>
+                                    <constraint firstAttribute="width" constant="171" id="Ck5-74-2Hx"/>
                                     <constraint firstAttribute="height" constant="21" id="Goh-KH-79C"/>
                                     <constraint firstAttribute="width" constant="171" id="VOw-mu-axE"/>
                                     <constraint firstAttribute="width" constant="171" id="wZt-aB-sdQ"/>
@@ -91,12 +62,40 @@
                                     </mask>
                                 </variation>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="高さ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SEW-YR-2SM">
+                                <rect key="frame" x="236" y="92" width="128" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="QMa-eB-6t3"/>
+                                    <constraint firstAttribute="width" constant="128" id="dQA-jg-QaA"/>
+                                    <constraint firstAttribute="height" constant="21" id="m60-Ya-rrP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="dQA-jg-QaA"/>
+                                        <exclude reference="m60-Ya-rrP"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular" misplaced="YES">
+                                    <rect key="frame" x="236" y="310" width="128" height="21"/>
+                                    <mask key="constraints">
+                                        <include reference="dQA-jg-QaA"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="QMa-eB-6t3"/>
+                                        <include reference="m60-Ya-rrP"/>
+                                    </mask>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="SEW-YR-2SM" firstAttribute="top" secondItem="XzQ-n9-4Au" secondAttribute="bottom" constant="43" id="3fj-9Z-18E"/>
-                            <constraint firstAttribute="centerX" secondItem="XzQ-n9-4Au" secondAttribute="centerX" id="Aqq-B3-PVe"/>
                             <constraint firstAttribute="centerX" secondItem="XzQ-n9-4Au" secondAttribute="centerX" id="Fh5-UO-wFq"/>
+                            <constraint firstItem="SEW-YR-2SM" firstAttribute="top" secondItem="XzQ-n9-4Au" secondAttribute="bottom" constant="74" id="JuM-Mn-ONt"/>
                             <constraint firstItem="XzQ-n9-4Au" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="28" id="a0u-Ba-ujD"/>
                             <constraint firstAttribute="centerX" secondItem="SEW-YR-2SM" secondAttribute="centerX" id="kmE-GO-RAH"/>
                             <constraint firstItem="K2c-j4-44x" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="qEs-U7-ct4"/>
@@ -105,6 +104,7 @@
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="Fh5-UO-wFq"/>
+                                <exclude reference="JuM-Mn-ONt"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
@@ -114,8 +114,7 @@
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="constraints">
-                                <exclude reference="Aqq-B3-PVe"/>
-                                <exclude reference="3fj-9Z-18E"/>
+                                <include reference="JuM-Mn-ONt"/>
                             </mask>
                         </variation>
                     </view>
