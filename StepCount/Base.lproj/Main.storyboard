@@ -33,8 +33,7 @@
                                         <exclude reference="oD8-Zp-BaU"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular" misplaced="YES">
-                                    <rect key="frame" x="103" y="28" width="171" height="21"/>
+                                <variation key="heightClass=regular">
                                     <mask key="constraints">
                                         <include reference="VOw-mu-axE"/>
                                         <include reference="oD8-Zp-BaU"/>
@@ -60,8 +59,7 @@
                                         <exclude reference="s6O-hW-Vgg"/>
                                     </mask>
                                 </variation>
-                                <variation key="heightClass=regular" misplaced="YES">
-                                    <rect key="frame" x="144" y="92" width="128" height="21"/>
+                                <variation key="heightClass=regular">
                                     <mask key="constraints">
                                         <include reference="s6O-hW-Vgg"/>
                                     </mask>
