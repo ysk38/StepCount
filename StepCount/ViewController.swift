@@ -32,8 +32,8 @@ class ViewController: UIViewController {
     
     /// 取得開始
     func startUpdate(){
-        self.pressureLabel.text = "気圧:---- hPa"
-        self.altitudeLabel.text = "高さ:-.-- m"
+        self.pressureLabel.text = "気圧: ---- hPa"
+        self.altitudeLabel.text = "高さ: -.-- m"
         
         if (CMAltimeter.isRelativeAltitudeAvailable()) {
             altimeter.startRelativeAltitudeUpdatesToQueue(NSOperationQueue.mainQueue(), withHandler:
