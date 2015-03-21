@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		704665C11ABD96A40048B573 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 704665C01ABD96A40048B573 /* CoreMotion.framework */; };
 		70E7DEA61A498C2500ABA0BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E7DEA51A498C2500ABA0BE /* AppDelegate.swift */; };
 		70E7DEA81A498C2500ABA0BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E7DEA71A498C2500ABA0BE /* ViewController.swift */; };
 		70E7DEAB1A498C2500ABA0BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70E7DEA91A498C2500ABA0BE /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		704665C01ABD96A40048B573 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		70E7DEA01A498C2500ABA0BE /* StepCount.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StepCount.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70E7DEA41A498C2500ABA0BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70E7DEA51A498C2500ABA0BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				704665C11ABD96A40048B573 /* CoreMotion.framework in Frameworks */,
 				70E7DEC61A4997A800ABA0BE /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,6 +65,7 @@
 		70E7DE971A498C2500ABA0BE = {
 			isa = PBXGroup;
 			children = (
+				704665C01ABD96A40048B573 /* CoreMotion.framework */,
 				70E7DEC51A4997A800ABA0BE /* CoreLocation.framework */,
 				70E7DEA21A498C2500ABA0BE /* StepCount */,
 				70E7DEB81A498C2500ABA0BE /* StepCountTests */,
