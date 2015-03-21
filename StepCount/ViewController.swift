@@ -32,8 +32,8 @@ class ViewController: UIViewController {
     
     /// 取得開始
     func startUpdate(){
-        self.pressureLabel.text = "気圧: ---- hPa"
-        self.altitudeLabel.text = "高さ: -.-- m"
+        self.pressureLabel.text = "Pressure: ---- hPa"
+        self.altitudeLabel.text = "Height: -.-- m"
         
         if (CMAltimeter.isRelativeAltitudeAvailable()) {
             altimeter.startRelativeAltitudeUpdatesToQueue(NSOperationQueue.mainQueue(), withHandler:
@@ -41,8 +41,8 @@ class ViewController: UIViewController {
                     if error == nil {
                         let pressure = data.pressure.doubleValue
                         let altitude = data.relativeAltitude.doubleValue
-                        self.pressureLabel.text = String(format: "気圧:%.1f hPa", pressure*10)
-                        self.altitudeLabel.text = String(format: "高さ:%.2f m", altitude)
+                        self.pressureLabel.text = String(format: "Pressure: %.1f hPa", pressure*10)
+                        self.altitudeLabel.text = String(format: "Height: %.2f m", altitude)
                     }
                 })
         } else {

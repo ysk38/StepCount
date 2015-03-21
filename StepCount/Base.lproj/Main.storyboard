@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,7 +16,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="気圧値" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XzQ-n9-4Au">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Height" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SEW-YR-2SM">
+                                <rect key="frame" x="236" y="92" width="128" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="QMa-eB-6t3"/>
+                                    <constraint firstAttribute="height" constant="21" id="s6O-hW-Vgg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="s6O-hW-Vgg"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="s6O-hW-Vgg"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=regular" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="336" y="92" width="128" height="21"/>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="136" y="92" width="128" height="21"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <exclude reference="QMa-eB-6t3"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Pressure" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XzQ-n9-4Au">
                                 <rect key="frame" x="215" y="28" width="171" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="171" id="VOw-mu-axE"/>
@@ -45,92 +74,28 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="高さ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SEW-YR-2SM">
-                                <rect key="frame" x="236" y="92" width="128" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="128" id="QMa-eB-6t3"/>
-                                    <constraint firstAttribute="height" constant="21" id="s6O-hW-Vgg"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="s6O-hW-Vgg"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular">
-                                    <mask key="constraints">
-                                        <include reference="s6O-hW-Vgg"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=compact-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="136" y="92" width="128" height="21"/>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="constraints">
-                                        <exclude reference="QMa-eB-6t3"/>
-                                    </mask>
-                                </variation>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lollipop-2-590x330.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="K2c-j4-44x">
-                                <rect key="frame" x="0.0" y="0.0" width="117" height="66"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="117" id="3Jz-R4-pRP"/>
-                                    <constraint firstAttribute="height" constant="66" id="GZE-r4-doq"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="117" id="R0M-qb-bph"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="R0M-qb-bph"/>
-                                    </mask>
-                                </variation>
-                            </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gy3-l4-qyq">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <color key="backgroundColor" red="1" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="XzQ-n9-4Au" secondAttribute="centerX" id="Fh5-UO-wFq"/>
-                            <constraint firstItem="SEW-YR-2SM" firstAttribute="top" secondItem="XzQ-n9-4Au" secondAttribute="bottom" constant="43" id="S5g-x3-TpO"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Gy3-l4-qyq" secondAttribute="trailing" constant="124" id="TrF-St-tSJ"/>
-                            <constraint firstItem="Gy3-l4-qyq" firstAttribute="top" secondItem="SEW-YR-2SM" secondAttribute="bottom" constant="90" id="W04-wq-UED"/>
-                            <constraint firstItem="XzQ-n9-4Au" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="28" id="a0u-Ba-ujD"/>
-                            <constraint firstItem="Gy3-l4-qyq" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="140" id="eP0-ar-Z9M"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Gy3-l4-qyq" secondAttribute="bottom" constant="114" id="h4X-M0-ya5"/>
-                            <constraint firstAttribute="centerX" secondItem="Gy3-l4-qyq" secondAttribute="centerX" id="jbb-wf-I8o"/>
+                            <constraint firstItem="SEW-YR-2SM" firstAttribute="top" secondItem="XzQ-n9-4Au" secondAttribute="bottom" constant="43" id="S5g-x3-TpO">
+                                <variation key="heightClass=regular" constant="27"/>
+                            </constraint>
+                            <constraint firstAttribute="centerY" secondItem="XzQ-n9-4Au" secondAttribute="centerY" id="bqz-mU-Bhq"/>
                             <constraint firstAttribute="centerX" secondItem="SEW-YR-2SM" secondAttribute="centerX" id="kmE-GO-RAH"/>
-                            <constraint firstItem="K2c-j4-44x" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="qEs-U7-ct4"/>
-                            <constraint firstItem="K2c-j4-44x" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="vEi-n1-KBW"/>
                         </constraints>
                         <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="Gy3-l4-qyq"/>
-                            </mask>
                             <mask key="constraints">
-                                <exclude reference="TrF-St-tSJ"/>
-                                <exclude reference="W04-wq-UED"/>
-                                <exclude reference="eP0-ar-Z9M"/>
-                                <exclude reference="jbb-wf-I8o"/>
                                 <exclude reference="Fh5-UO-wFq"/>
+                                <exclude reference="bqz-mU-Bhq"/>
                                 <exclude reference="S5g-x3-TpO"/>
-                                <exclude reference="h4X-M0-ya5"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
-                            <mask key="subviews">
-                                <include reference="Gy3-l4-qyq"/>
-                            </mask>
                             <mask key="constraints">
-                                <include reference="TrF-St-tSJ"/>
-                                <include reference="W04-wq-UED"/>
-                                <include reference="eP0-ar-Z9M"/>
-                                <include reference="jbb-wf-I8o"/>
                                 <include reference="Fh5-UO-wFq"/>
+                                <include reference="bqz-mU-Bhq"/>
                                 <include reference="S5g-x3-TpO"/>
-                                <include reference="h4X-M0-ya5"/>
                             </mask>
                         </variation>
                     </view>
@@ -144,7 +109,4 @@
             <point key="canvasLocation" x="243" y="240.75"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Lollipop-2-590x330.jpg" width="590" height="330"/>
-    </resources>
 </document>
